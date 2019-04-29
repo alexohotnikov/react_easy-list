@@ -6,10 +6,14 @@ export default (props) => {
   return(
    <div className = 'task-wrap'>
     { todos.map(({ text, state }, idx) => 
-      <p key = {idx} data-checked = {state} onClick = {() => {
-        changeSelectStatus(idx)
-      }}> 
-        <input type='checkbox' className = "checkbox" checked = {state}/>
+      <p key = {idx} data-checked = {state}> 
+        <input 
+          type='checkbox' 
+          className = "checkbox" 
+          onClick = {() => {
+            changeSelectStatus(idx)
+          }}
+          defaultChecked = {state}/>
         {text}
       </p> 
     )}

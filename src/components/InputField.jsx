@@ -8,7 +8,7 @@ export default (props) => {
   }
   return(
     <form onSubmit= {(e) => addItem(e)}>
-      <input className = 'input-todo' maxlength="21"/>
+      <input className = 'input-todo' maxLength="15"/>
     </form>
   )
 }

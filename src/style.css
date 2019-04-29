@@ -18,14 +18,14 @@ body {
   position: relative;
   display: inline-block;
   background-image: linear-gradient(to bottom, #395074, #3a5884, #3b6095, #3c69a6, #3c71b7);
-  padding: 30px;
+  padding: 0 20px 22px 20px;
   border-radius: 20px;
   color: white;
 }
 
 input {
   height: 26px;
-  font-size: 24px;
+  font-size: 20px;
   border-color: transparent;
   background-color:#3647a7;
   color: white;

@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   changeSelectStatus(index = -1) {
-    if( index != -1) {
+    if( index !== -1) {
       this.setState((state) => {
         return({
           todos: state.todos.map((item, idx) => {
