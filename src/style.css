@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-image: linear-gradient(to right bottom, #1b2a41, #1f3c69, #2a4d93, #415ebd, #616de7);
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+
+}
+
+.app-container {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient(to bottom, #395074, #3a5884, #3b6095, #3c69a6, #3c71b7);
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+}
+
+input {
+  height: 26px;
+  font-size: 24px;
+  border-color: transparent;
+  background-color:#3647a7;
+  color: white;
+}
+
+input::focus {
+  outline-color:white;
+}
+
+button {
+  font-size: 24px;
+}
+
+.app-container > .title {
+  font-size: 28px;
+}
+
+.checkbox {
+  vertical-align: middle; 
+  font-size: 32px;
+  transform: scale(1.1);
+  margin-right: 20px;
+}
+
+p[data-checked=true] {
+  color: rgb(200, 109, 109);
+  text-decoration: line-through;
+}
+
+.count-element_all {
+  font-size: 16px;
+  color: white;
+}
+
+.count-element_done {
+  font-size: 16px;
+  color: rgb(120, 219, 120);
+}
+
+.count-element_continue {
+  font-size: 16px;
+  color: yellow;
+}
+
+.info-block {
+   border-top: 1px solid rgb(214, 214, 214);
+}
+
+
+.task-wrap {
+  max-height: 200px;
+  overflow-y: auto; 
+  margin: 40px 0;
+}
+
