@@ -40,7 +40,6 @@ class App extends Component {
   }
 
   updateLocale() {
-    console.log('update', this.state)
     localStorage.setItem('todos', JSON.stringify({ _stated: this.state.todos }))
   }
   addTodo(text="") {
