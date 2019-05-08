@@ -20,7 +20,7 @@ export default ({ todos }) => {
 
   return(
     <div className = "info-block">
-      <p className = 'count-element_all'>Всего тасков: {filter()}</p>
+      <p className = 'count-element_all'>Всего задач поставленно: {filter()}</p>
       <p className = 'count-element_done'>Выполнено: {filter('done')}</p>
       <p className = 'count-element_continue'>Ожидаются: {filter('continue')}</p>
     </div>

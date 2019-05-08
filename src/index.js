@@ -82,8 +82,11 @@ class App extends Component {
 
   removeItemsAll() {
     this.setState({ todos: [] }) 
-    // this.state.todosRefs.
-    // localStorage.removeItem('todos')
+    this.state.todosRefs.get().then(reciver => {
+      reciver.docs.forEach( item => {
+        item.ref.delete()
+      })
+    }) 
   }
 
   render() {
