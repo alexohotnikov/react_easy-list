@@ -11,6 +11,7 @@ export default ({ todos }) => {
         }).length
       case 'continue':
         return todos.filter((value) => {
+          console.log('here')
           return value.state !== true
         }).length
       default:
